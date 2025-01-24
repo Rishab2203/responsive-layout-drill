@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.head,
+.foot {
+  padding: 2rem;
+  background-color: gray;
+}
+
+.foot {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.main {
+  margin: 1rem 0;
+  display: flex;
+}
+
+.red {
+  width: 70vw;
+  height: 25vh;
+  background-color: rgb(226, 68, 68);
+}
+
+.orange {
+  /* width: 100%; */
+  height: 25vh;
+  background-color: orange;
+}
+
+.yellow {
+  background-color: yellow;
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .red {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    display: block;
+  }
+
+  .yellow {
+    height: 25vh;
+  }
+  .red {
+    width: 100%;
+  }
+}
